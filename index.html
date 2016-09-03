@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title> First Demo</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"
+    </head>
+    <body ng-app="app">
+        <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <div class="navbar-brand">Demo v1.0</div>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#/Suscripciones">Inicio</a></li>
+                            <li><a href="#/producto">Productos</a></li>
+                            <li><a href="#/acerca">acerca</a></li>
+                        </ul>    
+                    </div>
+                </div>
+            </nav>
+        <div class="container">
+            <div class="row">
+                <ui-view></ui-view>
+            </div>
+            
+        </div>
+       <!-- Library Scripts -->
+       <script src="node_modules/jquery/dist/jquery.min.js"></script>
+       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+       <script src="node_modules/angular/angular.min.js"></script>
+       <script src="node_modules/angular-resource/angular-resource.min.js"></script>
+       <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+       <!-- Application Script -->
+       <script src="app/app.js"></script>
+       <script src="app/constantes/constantes.js"></script>
+       <!-- Domain
+        Classes -->
+
+       <!-- Services -->
+       <script src="app/services/dataServices.js"></script>
+       <script src="app/services/common.service.js"></script>
+       
+       <!-- Controllers -->
+       <script src="app/common/home/home.controller.js"></script>
+       <script src="app/common/productos/productos.controller.js"></script>
+       
+       
+
+       <!--Directives-->
+       <script src="app/directive/detailSus.directive.js"></script>
+    </body>
+</html>
